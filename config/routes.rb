@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root 'pages#welcome'
   get 'portfolio' => 'pages#portfolio'
+  get 'about' => 'pages#about'
+  get 'welcome' => 'pages#welcome'
+  get 'contact' => 'pages#contact'
 end
