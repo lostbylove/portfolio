@@ -37,10 +37,23 @@ footer {
   background-color: #343a40;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
   a {
     color: #fff;
     margin: 0 10px;
   }
+
+  p{
+    padding-top: 20px;
+    font-size: 12px;
+  }
+}
+
+.footer-logos{
+    width: 40px;
+    height: auto;
 }
