@@ -25,13 +25,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <header>
+  <header class="dropdown-header">
     <nav>
       <ul>
-        <li><%= link_to 'Home', welcome_path %></li>
-        <li><%= link_to 'About', about_path %></li>
-        <li><%= link_to 'Portfolio', portfolio_path %></li>
-        <li><%= link_to 'contact', contact_path %></li>
+        <li><%= link_to 'Home', welcome_path, class: 'header-link' %></li>
+        <li><%= link_to 'About', about_path, class: 'header-link'%></li>
+        <li><%= link_to 'Portfolio', portfolio_path, class: 'header-link' %></li>
+        <li><%= link_to 'contact', contact_path, class: 'header-link' %></li>
       </ul>
     </nav>
     <h1>Roon Phi Le</h1>
