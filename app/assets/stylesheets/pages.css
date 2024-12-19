@@ -42,13 +42,24 @@ main {
     color: #990000;
   }
 
-  button {
-    background-color: #990000;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #990000;
+  color: white;
+  text-decoration: none; /* Remove underline */
+  border: inset;
+  border-radius: 10px;
+  border-color: #343a40;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #cc0000;
 }
 
 footer {
@@ -74,4 +85,44 @@ footer {
 .footer-logos{
     width: 40px;
     height: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.image img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+/*use to stack items vertically for mobile apps */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image, .text {
+    max-width: 100%;
+  }
 }
