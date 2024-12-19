@@ -42,6 +42,10 @@ header {
   from {transform: translateX(100%)}
   to {transform: translateX(0)}
 }
+@keyframes slide-image-right {
+  from {transform: translateX(-100%)}
+  to {transform: translateX(0)}
+}
 
 .header-link{
   color: #FFFFFF;
@@ -128,15 +132,74 @@ footer {
 .image2 {
   flex: 1;
   max-width: 40%;
+
+}
+
+.image2.animate{
   animation-name: slide-image-left;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
 .image2 img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
+.image3 {
+  flex: 1;
+  max-width: 40%;
+
+}
+
+.image3.animate{
+  animation-name: slide-image-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.image3 img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.image4 {
+  flex: 1;
+  max-width: 40%;
+
+}
+
+.image4.animate{
+  animation-name: slide-image-left;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.image4 img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+  .image5 {
+    flex: 1;
+    max-width: 40%;
+
+  }
+
+  .image5.animate{
+    animation-name: slide-image-right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .image5 img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+
 
 
 .text {
@@ -163,7 +226,7 @@ footer {
 .about-header{
   background-color: black;
   color: #FFFFFF;
-  margin-bottom: -20px;
+  margin-bottom: -5px;
 }
 
 

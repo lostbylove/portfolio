@@ -4,14 +4,130 @@
     <h1 class="about-header">About Me</h1>
     <div class="container">
       <div class="text-about">
-        <h2 style="color: white;">I AM STILL MOVING</h2>
-        <p style="color: white;">For the past month, everyday I worked on learning a new programming language called Ruby and a web application framework called Rails. Utilizing content from CodeAcademy, Ruby books, and my previous Object-Oriented Programming knowledge from Eastern Washington University, I've self-taught myself the fundamentals of Ruby On Rails (ROR). </p>
-        <p style="color: white;"> I'm not stopping there. No, my desire is to become one of the best programmers in the Pacific Northwest! I wish to grow to my full potential. I've might fallen along the journey, but I'm still moving.</p>
-        <a href="/welcome" class="button">Learn More</a>  /* for now, will go to a new sub_about page */
+        <h2 style="color: white;">Programmer</h2>
+        <p style="color: white;">Education</p>
+        <p style="color: white;">Passion</p>
+        <a href="/welcome" class="button">Learn More</a>
       </div>
       <div class="image2">
-        <%= image_tag "portfolio-main.jpg" %>
+        <%= image_tag "workspace.jpg" %>
       </div>
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const image = document.querySelector('.image2');
+
+      // Create an observer
+      const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+      // Add the animate class when the image enters the viewport
+      image.classList.add('animate');
+      // Optionally, unobserve the image after animation starts
+      observer.unobserve(image);
+      }
+      });
+      });
+
+      // Observe the image
+      observer.observe(image);
+      });
+      </script>
     </div>
+  <div class="container">
+    <div class="image3">
+      <%= image_tag "potatoes.jpg" %>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const image = document.querySelector('.image3');
+
+              // Create an observer
+              const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          // Add the animate class when the image enters the viewport
+                          image.classList.add('animate');
+                          // Optionally, unobserve the image after animation starts
+                          observer.unobserve(image);
+                      }
+                  });
+              });
+
+              // Observe the image
+              observer.observe(image);
+          });
+      </script>
+    </div>
+    <div class="text-about">
+      <h2 style="color: white;">Gardener</h2>
+      <p style="color: white;">Growth</p>
+      <p style="color: white;">consistancy, nutrients</p>
+      <a href="/welcome" class="button">Learn More</a>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="text-about">
+      <h2 style="color: white;">Cook</h2>
+      <p style="color: white;">Let me Cook!</p>
+      <p style="color: white;">Slow cook perfection</p>
+      <a href="/welcome" class="button">Learn More</a>
+    </div>
+    <div class="image4">
+      <%= image_tag "cooking.jpg" %>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const image = document.querySelector('.image4');
+
+            // Create an observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Add the animate class when the image enters the viewport
+                        image.classList.add('animate');
+                        // Optionally, unobserve the image after animation starts
+                        observer.unobserve(image);
+                    }
+                });
+            });
+
+            // Observe the image
+            observer.observe(image);
+        });
+    </script>
+  </div>
+  <div class="container">
+    <div class="image5">
+      <%= image_tag "family.jpg" %>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const image = document.querySelector('.image5');
+
+              // Create an observer
+              const observer = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          // Add the animate class when the image enters the viewport
+                          image.classList.add('animate');
+                          // Optionally, unobserve the image after animation starts
+                          observer.unobserve(image);
+                      }
+                  });
+              });
+
+              // Observe the image
+              observer.observe(image);
+          });
+      </script>
+
+    </div>
+    <div class="text-about">
+      <h2 style="color: white;">Family, nothing stronger, help one another</h2>
+      <p style="color: white;">3 B's</p>
+      <p style="color: white;"></p>
+      <a href="/welcome" class="button">Learn More</a>
+    </div>
+
+  </div>
 
 </main>
