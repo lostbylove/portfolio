@@ -1,7 +1,15 @@
+.body{
+    background-image: url("bit_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
 
+}
 
 header {
-  background-color: #99000040;
+  background-color: #183a76;
   padding: 20px;
   text-align: center;
   animation-name: drop-header-down;
@@ -31,7 +39,7 @@ header {
 }
 
 .header-link{
-  color: #990000;
+  color: #FFFFFF;
 }
 
 .header-link:hover{
@@ -40,34 +48,32 @@ header {
 
 
 main {
-  background-color: #cc0000;
+
   background-size: cover;
   text-align: center;
-  padding: 300px 0;
+  padding: 100px 0;
 
 
-  h2 {
-    color: #990000;
-  }
+
 
 
 }
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #990000;
+  background-color: #122b58;
   color: white;
   text-decoration: none; /* Remove underline */
   border: inset;
   border-radius: 10px;
-  border-color: #343a40;
+  border-color: #183a76;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
 }
 
 .button:hover {
-  background-color: #cc0000;
+  background-color: #FFFFFF;
 }
 
 footer {
@@ -88,13 +94,14 @@ footer {
   }
 
   p{
+
     padding-top: 20px;
     font-size: 12px;
   }
 }
 
 .footer-logos{
-    width: 40px;
+    width: 32px;
     height: auto;
 }
 
