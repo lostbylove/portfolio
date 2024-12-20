@@ -29,7 +29,7 @@
     <nav>
       <ul>
         <li><%= link_to 'Home', welcome_path, class: 'header-link' %></li>
-        <li><%= link_to 'About', about_path, class: 'header-link'%></li>
+        <li><%= link_to 'About', about_path, class: 'header-link' %></li>
         <li><%= link_to 'Portfolio', portfolio_path, class: 'header-link' %></li>
         <li><%= link_to 'Contact', contact_path, class: 'header-link' %></li>
       </ul>
@@ -39,6 +39,7 @@
 
   <body class="body">
     <%= yield %>
+
   </body>
 
   <footer>
@@ -46,11 +47,13 @@
     <%= image_tag "github.png", alt: "Github logo", class:"footer-logos" %>
     <a href="https://linkedin.com/in/roon-le-4b58841b4">LinkedIn</a>
     <%= image_tag "linkedin.png", alt: "linkedin logo", class:"footer-logos" %>
-    <a href="https://youtube.com/@roonle7863">Youtube</a>
+    <a href="https://youtube.com/watch?v=UUC1w2EU3cg">Youtube</a>
     <%= image_tag "youtube.png", alt: "Youtube logo", class:"footer-logos" %>
     <a href="https://facebook.com/roon.le.5/">Facebook</a>
     <%= image_tag "facebook.png", alt: "Facebook logo", class:"footer-logos" %>
     <p>&copy; 2024 Roon Le</p>
   </footer>
+
+
 
 </html>

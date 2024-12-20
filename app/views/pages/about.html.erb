@@ -1,61 +1,24 @@
 <main>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1 class="about-header">About Me</h1>
     <div class="container">
       <div class="text-about">
         <h2 style="color: white;">Programmer</h2>
-        <p style="color: white;">Education</p>
-        <p style="color: white;">Passion</p>
+        <p style="color: white; font-style: italic; font-size: 4mm">That is indeed a picture of my workspace at home.</p>
+        <p style="color: white;">My first programming language was Java. I've worked with the language on numerous projects in college spanning five years. I recently started to pick up Ruby and started to prefer it over Java. Why? Imagine your dancing with a partner that is stiff and requires more energy to direct. That's java. When it comes to Ruby it feels more natural and easy going. I am just happy I don't have to make a public get method every time I have to get to a private class variable. I just need to type is attr_reader and the variable. </p>
         <a href="/welcome" class="button">Learn More</a>
       </div>
       <div class="image2">
         <%= image_tag "workspace.jpg" %>
       </div>
-      <script>
-      document.addEventListener('DOMContentLoaded', function () {
-      const image = document.querySelector('.image2');
 
-      // Create an observer
-      const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-      // Add the animate class when the image enters the viewport
-      image.classList.add('animate');
-      // Optionally, unobserve the image after animation starts
-      observer.unobserve(image);
-      }
-      });
-      });
-
-      // Observe the image
-      observer.observe(image);
-      });
-      </script>
     </div>
   <div class="container">
     <div class="image3">
       <%= image_tag "potatoes.jpg" %>
-      <script>
-          document.addEventListener('DOMContentLoaded', function () {
-              const image = document.querySelector('.image3');
 
-              // Create an observer
-              const observer = new IntersectionObserver((entries) => {
-                  entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                          // Add the animate class when the image enters the viewport
-                          image.classList.add('animate');
-                          // Optionally, unobserve the image after animation starts
-                          observer.unobserve(image);
-                      }
-                  });
-              });
-
-              // Observe the image
-              observer.observe(image);
-          });
-      </script>
     </div>
     <div class="text-about">
       <h2 style="color: white;">Gardener</h2>
@@ -75,50 +38,12 @@
     <div class="image4">
       <%= image_tag "cooking.jpg" %>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const image = document.querySelector('.image4');
 
-            // Create an observer
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        // Add the animate class when the image enters the viewport
-                        image.classList.add('animate');
-                        // Optionally, unobserve the image after animation starts
-                        observer.unobserve(image);
-                    }
-                });
-            });
-
-            // Observe the image
-            observer.observe(image);
-        });
-    </script>
   </div>
   <div class="container">
     <div class="image5">
       <%= image_tag "family.jpg" %>
-      <script>
-          document.addEventListener('DOMContentLoaded', function () {
-              const image = document.querySelector('.image5');
 
-              // Create an observer
-              const observer = new IntersectionObserver((entries) => {
-                  entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                          // Add the animate class when the image enters the viewport
-                          image.classList.add('animate');
-                          // Optionally, unobserve the image after animation starts
-                          observer.unobserve(image);
-                      }
-                  });
-              });
-
-              // Observe the image
-              observer.observe(image);
-          });
-      </script>
 
     </div>
     <div class="text-about">
@@ -129,5 +54,31 @@
     </div>
 
   </div>
+  <script>
+
+      document.addEventListener('DOMContentLoaded', function () {
+          // Select all the elements that need animations
+          const elementsToAnimate = document.querySelectorAll(
+              '.image2, .image3, .image4, .image5'
+          );
+
+          // Create an IntersectionObserver
+          const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      entry.target.classList.add('animate'); // Add the animation class
+                      observer.unobserve(entry.target); // Stop observing once animated
+                  }
+              });
+          }, {
+
+          });
+
+          // Observe all selected elements
+          elementsToAnimate.forEach(element => observer.observe(element));
+      });
+
+  </script>
+
 
 </main>

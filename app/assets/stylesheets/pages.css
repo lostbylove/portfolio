@@ -55,16 +55,11 @@ header {
   color: #000000;
 }
 
-
 main {
 
   background-size: cover;
   text-align: center;
   padding: 100px 0;
-
-
-
-
 
 }
 .button {
@@ -103,7 +98,7 @@ footer {
   }
 
   p{
-
+    color: #fff;
     padding-top: 20px;
     font-size: 12px;
   }
@@ -124,83 +119,43 @@ footer {
   background-color: black;
 }
 
-.image {
+.image{
   flex: 1;
   max-width: 40%;
 }
-
-.image2 {
+ .image2, .image4 {
   flex: 1;
   max-width: 40%;
-
-}
-
-.image2.animate{
   animation-name: slide-image-left;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
 }
 
-.image2 img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
-}
-.image3 {
+.image3, .image5 {
   flex: 1;
   max-width: 40%;
-
-}
-
-.image3.animate{
   animation-name: slide-image-right;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-.image3 img {
+.image img, .image2 img, .image3 img, .image4 img, .image5 img{
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
 
-.image4 {
-  flex: 1;
-  max-width: 40%;
-
-}
-
-.image4.animate{
+.image2.animate, .image4.animate{
   animation-name: slide-image-left;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-.image4 img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
+.image3.animate, .image5.animate{
+  animation-name: slide-image-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
-
-  .image5 {
-    flex: 1;
-    max-width: 40%;
-
-  }
-
-  .image5.animate{
-    animation-name: slide-image-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-
-  .image5 img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners */
-  }
-
-
 
 .text {
   flex: 1;
@@ -217,19 +172,11 @@ footer {
 
 }
 
-.image img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
-}
-
 .about-header{
   background-color: black;
   color: #FFFFFF;
   margin-bottom: -5px;
 }
-
-
 
 /*use to stack items vertically for mobile apps */
 @media (max-width: 768px) {
