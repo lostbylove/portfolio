@@ -28,25 +28,6 @@ header {
   }
 }
 
-@keyframes drop-header-down {
-  from {transform: translateY(-100%)}
-  to {transform: translateY(0)}
-}
-
-@keyframes drop-footer-up {
-  from {transform: translateY(100%)}
-  to {transform: translateY(0)}
-}
-
-@keyframes slide-image-left {
-  from {transform: translateX(100%)}
-  to {transform: translateX(0)}
-}
-@keyframes slide-image-right {
-  from {transform: translateX(-100%)}
-  to {transform: translateX(0)}
-}
-
 .header-link{
   color: #FFFFFF;
 }
@@ -123,21 +104,6 @@ footer {
   flex: 1;
   max-width: 40%;
 }
- .image2, .image4 {
-  flex: 1;
-  max-width: 40%;
-  animation-name: slide-image-left;
-   animation-duration: 2s;
-   animation-fill-mode: forwards;
-}
-
-.image3, .image5 {
-  flex: 1;
-  max-width: 40%;
-  animation-name: slide-image-right;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
 
 .image img, .image2 img, .image3 img, .image4 img, .image5 img{
   width: 100%; /* Make the image responsive */
@@ -145,23 +111,10 @@ footer {
   border-radius: 10px; /* Optional: Add rounded corners */
 }
 
-.image2.animate, .image4.animate{
-  animation-name: slide-image-left;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-.image3.animate, .image5.animate{
-  animation-name: slide-image-right;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
 .text {
   flex: 1;
   padding: 20px;
   max-width: 60%;
-
 }
 
 .text-about {
@@ -169,7 +122,6 @@ footer {
   padding: 20px;
   max-width: 60%;
   text-align: left;
-
 }
 
 .about-header{
@@ -177,7 +129,52 @@ footer {
   color: #FFFFFF;
   margin-bottom: -5px;
 }
+/*animation section*/
+@keyframes drop-header-down {
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0)}
+}
 
+@keyframes drop-footer-up {
+  from {transform: translateY(100%)}
+  to {transform: translateY(0)}
+}
+
+@keyframes slide-image-left {
+  from {transform: translateX(100%)}
+  to {transform: translateX(0)}
+}
+
+@keyframes slide-image-right {
+  from {transform: translateX(-100%)}
+  to {transform: translateX(0)}
+}
+.image2, .image3, .image4, .image5 {
+  flex: 1;
+  max-width: 40%;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.image2, .image4 {
+  animation-name: slide-image-left;
+}
+
+.image3, .image5 {
+  animation-name: slide-image-right;
+}
+
+.image4 {
+  animation-delay: 5s;
+}
+
+.image3 {
+  animation-delay: 10s;
+}
+
+.image5 {
+  animation-delay: 15s;
+}
 /*use to stack items vertically for mobile apps */
 @media (max-width: 768px) {
   .container {

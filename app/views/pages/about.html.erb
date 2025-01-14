@@ -6,25 +6,26 @@
     <div class="container">
       <div class="text-about">
         <h2 style="color: white;">Programmer</h2>
-        <p style="color: white; font-style: italic; font-size: 4mm">That is indeed a picture of my workspace at home.</p>
-        <p style="color: white;">My first programming language was Java. I've worked with the language on numerous projects in college spanning five years. I recently started to pick up Ruby and started to prefer it over Java. Why? Imagine your dancing with a partner that is stiff and requires more energy to direct. That's java. When it comes to Ruby it feels more natural and easy going. I am just happy I don't have to make a public get method every time I have to get to a private class variable. I just need to type is attr_reader and the variable. </p>
-        <a href="/welcome" class="button">Learn More</a>
+        <p style="color: white;">My first programming language was Java. I've worked with the language on numerous projects in college spanning five years. I recently started to pick up Ruby and started to prefer it over Java. Why? Imagine you are dancing with a partner that is stiff and requires more energy to direct. That's java. When it comes to Ruby it feels more natural and easy going. I am just happy I don't have to make a public get method every time I have to get to a private class variable. I just need to type is attr_reader and the variable. </p>
+        <p style="color: white; font-style: oblique">Why do I program?</p>
+        <p style="color: white;">I do for many reasons. First, the idea that the world is becoming more digital and I wanted to be a part of the group of people that pushes society to new horizon utilizing man's most powerful tool to do so. Secondly, the addictive feeling of accomplishment when I fixed a problem after hours of trial and error. Thirdly, to be creative.</p>
       </div>
       <div class="image2">
+        <p style="color: white; font-style: italic; font-size: 4mm">My workspace at home.</p>
         <%= image_tag "workspace.jpg" %>
       </div>
-
     </div>
+
   <div class="container">
     <div class="image3">
+      <p style="color: white; font-style: italic; font-size: 4mm">Red potatoes getting hosed down.</p>
       <%= image_tag "potatoes.jpg" %>
-
     </div>
+
     <div class="text-about">
       <h2 style="color: white;">Gardener</h2>
-      <p style="color: white;">Growth</p>
-      <p style="color: white;">consistancy, nutrients</p>
-      <a href="/welcome" class="button">Learn More</a>
+      <p style="color: white;">I enjoy seeing change. As a gardener, growth is the main driver.</p>
+      <p style="color: white;">Nitrogen(N)</p>
     </div>
 
   </div>
@@ -35,7 +36,9 @@
       <p style="color: white;">Slow cook perfection</p>
       <a href="/welcome" class="button">Learn More</a>
     </div>
+
     <div class="image4">
+      <p style="color: white; font-style: italic; font-size: 4mm">Encapsulating my meat in a smoker.</p>
       <%= image_tag "cooking.jpg" %>
     </div>
 
@@ -43,42 +46,15 @@
   <div class="container">
     <div class="image5">
       <%= image_tag "family.jpg" %>
-
-
     </div>
+
     <div class="text-about">
       <h2 style="color: white;">Family, nothing stronger, help one another</h2>
       <p style="color: white;">3 B's</p>
       <p style="color: white;"></p>
-      <a href="/welcome" class="button">Learn More</a>
     </div>
 
   </div>
-  <script>
-
-      document.addEventListener('DOMContentLoaded', function () {
-          // Select all the elements that need animations
-          const elementsToAnimate = document.querySelectorAll(
-              '.image2, .image3, .image4, .image5'
-          );
-
-          // Create an IntersectionObserver
-          const observer = new IntersectionObserver((entries, observer) => {
-              entries.forEach(entry => {
-                  if (entry.isIntersecting) {
-                      entry.target.classList.add('animate'); // Add the animation class
-                      observer.unobserve(entry.target); // Stop observing once animated
-                  }
-              });
-          }, {
-
-          });
-
-          // Observe all selected elements
-          elementsToAnimate.forEach(element => observer.observe(element));
-      });
-
-  </script>
 
 
 </main>
