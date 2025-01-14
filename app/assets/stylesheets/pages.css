@@ -49,9 +49,8 @@ main {
   background-color: #122b58;
   color: white;
   text-decoration: none; /* Remove underline */
-  border: inset;
   border-radius: 10px;
-  border-color: #183a76;
+  border: inset #183a76;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -164,17 +163,6 @@ footer {
   animation-name: slide-image-right;
 }
 
-.image4 {
-  animation-delay: 5s;
-}
-
-.image3 {
-  animation-delay: 10s;
-}
-
-.image5 {
-  animation-delay: 15s;
-}
 /*use to stack items vertically for mobile apps */
 @media (max-width: 768px) {
   .container {
