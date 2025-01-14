@@ -122,11 +122,26 @@ footer {
   max-width: 60%;
   text-align: left;
 }
+.text-about h2 {
+  margin: 0;
+  margin-bottom: 1em;  /* Adds space below the h2 heading */
+}
 
 .about-header{
   background-color: black;
   color: #FFFFFF;
   margin-bottom: -5px;
+}
+
+.inline-heading{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.inline-heading h2, .inline-heading h6 {
+  margin-top: 1em;
 }
 /*animation section*/
 @keyframes drop-header-down {
