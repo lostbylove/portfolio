@@ -1,3 +1,33 @@
 <main>
-  <p>"IN DEVELOPMENT"</p>
+  <h1 class="portfolio-header">Projects</h1>
+  <div class="text-projects">
+    <h2 style="color: white; text-decoration: underline">Portfolio Website</h2>
+    <p style="color: white;">The creation of this website, powered by Ruby on Rails. The main goal was to showcase the basic operations of CRUD and who I am as a person. The side goal was to learn more about the MVC design pattern hands on.</p>
+    <p style="color: white;"></p>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="" alt="Description 1">
+        <p>Description 1</p>
+      </div>
+      <div class="slide">
+        <img src="" alt="Description 2">
+        <p>Description 2</p>
+      </div>
+      <div class="slide">
+        <img src="" alt="Description 3">
+        <p>Description 3</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-buttons">
+    <button class="slider-btn" onclick="prevSlide()">❮ Prev</button>
+    <button class="slider-btn" onclick="nextSlide()">Next ❯</button>
+  </div>
+
 </main>
+
+<%= javascript_include_tag 'slider' %>
