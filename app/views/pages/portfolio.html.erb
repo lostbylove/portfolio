@@ -23,12 +23,13 @@
         <p>Description 3</p>
       </div>
     </div>
+    <div class="slider-buttons">
+      <button class="slider-btn prev">❮ Prev</button>
+      <button class="slider-btn next">Next ❯</button>
+    </div>
   </div>
 
-  <div class="slider-buttons">
-    <button class="slider-btn" onclick="prevSlide(0)">❮ Prev</button>
-    <button class="slider-btn" onclick="nextSlide(0)">Next ❯</button>
-  </div>
+
 
   <div class="text-projects">
     <h2 style="color: white; text-decoration: underline"> ArborPro LLC Tree Service Website</h2>
@@ -54,16 +55,17 @@
         <p>Description 3</p>
       </div>
     </div>
+    <div class="slider-buttons">
+      <button class="slider-btn prev">❮ Prev</button>
+      <button class="slider-btn next">Next ❯</button>
+    </div>
   </div>
 
-  <div class="slider-buttons">
-    <button class="slider-btn" onclick="prevSlide(1)">❮ Prev</button>
-    <button class="slider-btn" onclick="nextSlide(1)">Next ❯</button>
-  </div>
+
 
 
 
 
 </main>
 
-<%= javascript_include_tag 'slider' %>
+<%= javascript_include_tag "slider", "data-turbo-track": "reload" %>
