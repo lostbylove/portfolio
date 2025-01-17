@@ -2,31 +2,67 @@
   <h1 class="portfolio-header">Projects</h1>
   <div class="text-projects">
     <h2 style="color: white; text-decoration: underline">Portfolio Website</h2>
-    <p style="color: white;">The creation of this website, powered by Ruby on Rails. The main goal was to showcase the basic operations of CRUD and who I am as a person. The side goal was to learn more about the MVC design pattern hands on.</p>
-    <p style="color: white;"></p>
+    <p style="color: white;">The creation of this website is powered by Ruby on Rails. The main goal was to showcase the basic operations of CRUD and who I am as a person. The side goal was to learn more about the MVC design pattern hands on.</p>
   </div>
 
-  <div class="slider-container">
+  <div class="slider-container" id="slider1">
     <div class="slider">
       <div class="slide">
-        <img src="" alt="Description 1">
-        <p>Description 1</p>
+        <%= image_tag "about-html.png" %>
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+        <p>Paragraph explaination</p>
       </div>
       <div class="slide">
         <img src="" alt="Description 2">
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Description 2</p>
       </div>
       <div class="slide">
         <img src="" alt="Description 3">
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Description 3</p>
       </div>
     </div>
   </div>
 
   <div class="slider-buttons">
-    <button class="slider-btn" onclick="prevSlide()">❮ Prev</button>
-    <button class="slider-btn" onclick="nextSlide()">Next ❯</button>
+    <button class="slider-btn" onclick="prevSlide(0)">❮ Prev</button>
+    <button class="slider-btn" onclick="nextSlide(0)">Next ❯</button>
   </div>
+
+  <div class="text-projects">
+    <h2 style="color: white; text-decoration: underline"> ArborPro LLC Tree Service Website</h2>
+    <p style="color: white;">A friend of mine had issues with his free business website on Google being basic. So, I volunteered to help him create his own website by using WordPress and Siteground to host it. I looked at his competitor's websites and pulled inspiration from their designs.</p>
+    <a href="https://www.arborprocda.com/services/" class="button">View Website</a>
+  </div>
+
+  <div class="slider-container" id="slider2">
+    <div class="slider">
+      <div class="slide">
+        <%= image_tag "landing-page.png" %>
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+        <p>Description</p>
+      </div>
+      <div class="slide">
+        <%= image_tag "star-animation.png" %>
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+        <p>Description 2</p>
+      </div>
+      <div class="slide">
+        <%= image_tag "plugin.png" %>
+        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+        <p>Description 3</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-buttons">
+    <button class="slider-btn" onclick="prevSlide(1)">❮ Prev</button>
+    <button class="slider-btn" onclick="nextSlide(1)">Next ❯</button>
+  </div>
+
+
+
 
 </main>
 

@@ -1,25 +1,25 @@
-// JavaScript for the slider functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const sliders = document.querySelectorAll(".slider"); // Get all sliders
+    let currentIndexes = Array(sliders.length).fill(0); // Track index for each slider
 
-let currentIndex = 0;
-const slides = document.querySelectorAll(".slide");
-const totalSlides = slides.length;
-const slider = document.querySelector(".slider");
+    function updateSlide(sliderIndex) {
+        sliders[sliderIndex].style.transform = `translateX(-${currentIndexes[sliderIndex] * 100}%)`;
+    }
 
-console.log("Total slides:", totalSlides);
+    window.nextSlide = function (sliderIndex) {
+        const totalSlides = sliders[sliderIndex].children.length;
+        currentIndexes[sliderIndex] = (currentIndexes[sliderIndex] + 1) % totalSlides;
+        updateSlide(sliderIndex);
+    };
 
-function updateSlide() {
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+    window.prevSlide = function (sliderIndex) {
+        const totalSlides = sliders[sliderIndex].children.length;
+        currentIndexes[sliderIndex] = (currentIndexes[sliderIndex] - 1 + totalSlides) % totalSlides;
+        updateSlide(sliderIndex);
+    };
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateSlide();
-}
 
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateSlide();
-}
-
-// Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+   // sliders.forEach((_, index) => {
+   //     setInterval(() => nextSlide(index), 15000);
+   // });
+});
