@@ -1,39 +1,25 @@
-document.addEventListener("turbo:load", function () {
-    console.log("Turbo Drive has loaded the page");
+document.addEventListener("DOMContentLoaded", function () {
+    const sliders = document.querySelectorAll(".slider"); // Get all sliders
+    let currentIndexes = Array(sliders.length).fill(0); // Track index for each slider
 
-    document.querySelectorAll(".slider-container").forEach((sliderContainer, index) => {
-        let currentIndex = 0;
-        const slides = sliderContainer.querySelectorAll(".slide");
-        const totalSlides = slides.length;
-        const slider = sliderContainer.querySelector(".slider");
+    function updateSlide(sliderIndex) {
+        sliders[sliderIndex].style.transform = `translateX(-${currentIndexes[sliderIndex] * 100}%)`;
+    }
 
-        if (!slider || slides.length === 0) {
-            console.warn(`Slider ${index + 1} not found. Skipping initialization.`);
-            return;
-        }
+    window.nextSlide = function (sliderIndex) {
+        const totalSlides = sliders[sliderIndex].children.length;
+        currentIndexes[sliderIndex] = (currentIndexes[sliderIndex] + 1) % totalSlides;
+        updateSlide(sliderIndex);
+    };
 
-        function updateSlide() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+    window.prevSlide = function (sliderIndex) {
+        const totalSlides = sliders[sliderIndex].children.length;
+        currentIndexes[sliderIndex] = (currentIndexes[sliderIndex] - 1 + totalSlides) % totalSlides;
+        updateSlide(sliderIndex);
+    };
 
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSlide();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateSlide();
-        }
-
-        // Find buttons within the same slider-container
-        const nextButton = sliderContainer.querySelector(".slider-btn.next");
-        const prevButton = sliderContainer.querySelector(".slider-btn.prev");
-
-        if (nextButton) nextButton.addEventListener("click", nextSlide);
-        if (prevButton) prevButton.addEventListener("click", prevSlide);
-
-        // Auto-slide every 5 seconds
-        //setInterval(nextSlide, 5000);
+    // Auto-slide every 5 seconds for each slider
+    sliders.forEach((_, index) => {
+        setInterval(() => nextSlide(index), 5000);
     });
 });
