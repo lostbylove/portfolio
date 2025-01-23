@@ -26,9 +26,9 @@ test:
 production:
   primary:
     adapter: postgresql
-    url: <%= ENV['DATABASE_URL'] %>
+    encoding: unicode
     pool: 5
-    timeout: 5000
+    hurl: <%= ENV['DATABASE_URL'] %>
   cache:
     adapter: postgresql
     url: <%= ENV['DATABASE_URL'] %>
