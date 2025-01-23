@@ -113,6 +113,7 @@ footer {
   flex: 1;
   padding: 20px;
   max-width: 60%;
+  color: white;
 }
 
 .text-about {
@@ -120,6 +121,7 @@ footer {
   padding: 20px;
   max-width: 60%;
   text-align: left;
+  color: #FFFFFF;
 }
 .text-about h2 {
   /* Adds space below the h2 heading */
@@ -135,7 +137,7 @@ footer {
 }
 
 .text-projects p{
-  max-width: 60%;
+  max-width: 90%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -250,7 +252,5 @@ footer {
     max-width: 100%;
   }
 
-  .text-projects p {
-    max-width: 90%;
-  }
+
 }

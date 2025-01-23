@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Auto-slide every 5 seconds for each slider
-    sliders.forEach((_, index) => {
-        setInterval(() => nextSlide(index), 5000);
-    });
+    // sliders.forEach((_, index) => {
+    //     setInterval(() => nextSlide(index), 5000);
+    // });
 });

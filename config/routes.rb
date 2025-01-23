@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   get 'portfolio' => 'pages#portfolio'
   get 'about' => 'pages#about'
   get 'welcome' => 'pages#welcome'
-  get 'contact' => 'pages#contact'
+  get 'contact' => 'pages#contact'  # Point 'contact' to ContactFormsController
+  resources :contact_forms, only: [:new, :create]
 end
