@@ -128,6 +128,7 @@
     <orderEntry type="library" scope="PROVIDED" name="solid_cable (v3.0.5, mise: 3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_cache (v1.0.6, mise: 3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_queue (v1.1.2, mise: 3.3.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v2.5.0, mise: 3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.23.2, mise: 3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.4, mise: 3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v3.1.2, mise: 3.3.6) [gem]" level="application" />

@@ -16,5 +16,5 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'welcome' => 'pages#welcome'
   get 'contact' => 'pages#contact'  # Point 'contact' to ContactFormsController
-  resources :contact_forms, only: [:new, :create]
+  resources :contact_forms, only: [:index, :show, :new, :create, :edit, :update, :destroy] # All 7 standard actions
 end

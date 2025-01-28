@@ -16,7 +16,7 @@
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+
   </head>
 
   <header class="dropdown-header">
@@ -32,11 +32,7 @@
   </header>
 
   <body class="body">
-  <% if flash[:notice] %>
-    <div class="notice">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
+
     <%= yield %>
 
   </body>

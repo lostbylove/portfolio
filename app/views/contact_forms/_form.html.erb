@@ -1,16 +1,17 @@
 <%= form_with model: @contact_form, local: true do |form| %>
-  <div class="text">
+  <div class="container">
+    <div class="text">
   <p>
     <%= form.label :first_name %><br>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, :placeholder => "first name" %>
   </p>
   <p>
     <%= form.label :last_name %><br>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, :placeholder => "last name" %>
   </p>
   <p>
     <%= form.label :email %><br>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, :placeholder => "abc@something.com" %>
   </p>
   <p >
     <%= form.label :phone %><br>
@@ -23,5 +24,6 @@
   <p>
     <%= form.submit "Send Message" %>
   </p>
+  </div>
   </div>
 <% end %>
