@@ -218,9 +218,7 @@ footer {
 .slide img {
   width: 90%;
   height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 15px;
 }
 
 .slide p {
