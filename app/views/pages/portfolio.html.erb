@@ -1,3 +1,9 @@
+<head>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+
 <main>
   <h1 class="portfolio-header">Projects</h1>
   <div class="text-projects">
@@ -8,7 +14,9 @@
   <div class="slider-container" id="slider1">
     <div class="slider">
       <div class="slide">
-        <%= image_tag "about-html.png" %>
+        <a href="<%= image_path 'about-html.png' %>" data-lightbox="gallery" data-title="Optional Caption">
+          <%= image_tag "about-html.png", alt: "Image description" %>
+        </a>
         <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Paragraph explanation</p>
       </div>
@@ -63,3 +71,4 @@
 </main>
 
 <%= javascript_include_tag "slider", "data-turbo-track": "reload" %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>

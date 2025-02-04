@@ -6,7 +6,6 @@ class ContactFormsController < ApplicationController
   def create
     @contact_form = ContactForm.new(contact_form_params)
     if @contact_form.save
-      flash[:notice] = "Thank you #{@contact_form.first_name}, your message has been sent."
       redirect_to contact_form_path(@contact_form)
     else
       render :new
@@ -26,7 +25,6 @@ class ContactFormsController < ApplicationController
     @contact_form = ContactForm.find(params[:id])
 
     if @contact_form.update(message: contact_form_params[:message])
-      flash[:notice] = "Contact form updated successfully."
       redirect_to @contact_form
     else
       render :edit
