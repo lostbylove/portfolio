@@ -142,6 +142,8 @@ footer {
   margin: 0 0 1em;
 }
 
+/*Portfolio Section */
+
 .text-projects{
   background-color: black;
   color: #FFFFFF;
@@ -173,6 +175,11 @@ footer {
   margin-top: 1em;
 }
 
+.portfolio-img {
+  width: 300px;
+  height: auto;
+}
+
 .image2, .image3, .image4, .image5 {
   flex: 1;
   max-width: 40%;
@@ -201,15 +208,15 @@ footer {
 
 /* Each slide */
 .slide {
-  min-width: 100%;
+  min-width: 90%;
   text-align: center;
   position: relative;
 }
 
 .slide img {
-  width: 90%;
+  width: 80%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 100px;
 
 }
 

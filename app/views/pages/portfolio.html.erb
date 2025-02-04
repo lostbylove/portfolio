@@ -1,8 +1,5 @@
-<head>
-  <%= stylesheet_link_tag 'application', media: 'all' %>
-  <!-- Lightbox2 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-</head>
+<!-- Lightbox2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
 <main>
   <h1 class="portfolio-header">Projects</h1>
@@ -14,8 +11,8 @@
   <div class="slider-container" id="slider1">
     <div class="slider">
       <div class="slide">
-        <a href="<%= image_path 'about-html.png' %>" data-lightbox="gallery" data-title="Optional Caption">
-          <%= image_tag "about-html.png", alt: "Image description" %>
+        <a href="<%= image_path 'about-html.png' %>" data-lightbox="gallery" data-title="About HTML Page">
+          <%= image_tag "about-html.png", alt: "about page html" %>
         </a>
         <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Paragraph explanation</p>
@@ -46,7 +43,7 @@
   <div class="slider-container"  id="slider2">
     <div class="slider">
       <div class="slide">
-        <%= image_tag "landing-page.png" %>
+        <%= image_tag "landing-page.png"%>
         <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Description</p>
       </div>
@@ -69,6 +66,8 @@
     <button class="slider-btn" onclick="nextSlide(1)">Next ❯</button>
   </div>
 </main>
+
+
 
 <%= javascript_include_tag "slider", "data-turbo-track": "reload" %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
