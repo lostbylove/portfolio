@@ -196,7 +196,6 @@ footer {
   border-radius: 10px;
   margin-top: 15px;
 
-
 }
 
 /* Slider wrapper */
@@ -216,6 +215,7 @@ footer {
 .slide img {
   width: 80%;
   height: auto;
+  position: relative;
 }
 
 .slide p {
