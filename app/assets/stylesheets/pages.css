@@ -208,14 +208,19 @@ footer {
 /* Each slide */
 .slide {
   min-width: 90%;
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;    /* Center children horizontally */
+  justify-content: center; /* Optionally center children vertically */
   position: relative;
 }
 
 .slide img {
-  width: 80%;
+  width: 90%;
   height: auto;
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slide p {
