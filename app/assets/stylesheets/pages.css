@@ -286,6 +286,42 @@ footer {
 @keyframes drop-footer-up {
   from {transform: translateY(100%)}
   to {transform: translateY(0)}
+
+
+}
+
+.image-container {
+  position: relative;
+  width: 500px;    /* Adjust to your desired width */
+  height: 300px;   /* Adjust to your desired height */
+  margin: 0 auto;  /* Center the container if needed */
+  overflow: hidden;
+}
+
+.animated-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeAnimation 25s infinite;
+}
+
+/* Stagger animation delays for each image */
+.animated-image:nth-child(1) { animation-delay: 0s; }
+.animated-image:nth-child(2) { animation-delay: 5s; }
+.animated-image:nth-child(3) { animation-delay: 10s; }
+.animated-image:nth-child(4) { animation-delay: 15s; }
+.animated-image:nth-child(5) { animation-delay: 20s; }
+
+/* Keyframe Animation: Adjust percentages for timing as needed */
+@keyframes fadeAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /*use to stack items vertically for mobile apps */
@@ -298,6 +334,5 @@ footer {
   .image, .text {
     max-width: 100%;
   }
-
 
 }

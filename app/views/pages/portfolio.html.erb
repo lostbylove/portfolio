@@ -40,18 +40,24 @@
   <div class="slider-container"  id="slider2">
     <div class="slider">
       <div class="slide">
+        <a href="<%= image_path 'landing-page.png' %>" data-lightbox="gallery2" data-title="ArborPro Home Page">
         <%= image_tag "landing-page.png"%>
+        </a>
         <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Description</p>
       </div>
       <div class="slide">
+        <a href="<%= image_path 'star-animation.png' %>" data-lightbox="gallery2" data-title="Star Animation">
         <%= image_tag "star-animation.png" %>
+        </a>
         <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
         <p>Description 2</p>
       </div>
       <div class="slide">
+        <a href="<%= image_path 'plugin.png' %>" data-lightbox="gallery2" data-title="Plugin Usage">
         <%= image_tag "plugin.png" %>
-        <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+          <p style="font-style: italic; font-size: 4mm;">Click to Enlarge</p>
+        </a>
         <p>Description 3</p>
       </div>
     </div>
@@ -68,3 +74,8 @@
 
 <%= javascript_include_tag "slider", "data-turbo-track": "reload" %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    lightbox.option({
+        'positionFromTop': 125
+    })
+</script>
