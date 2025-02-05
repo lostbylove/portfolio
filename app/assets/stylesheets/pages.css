@@ -292,8 +292,8 @@ footer {
 
 .image-container {
   position: relative;
-  width: 500px;    /* Adjust to your desired width */
-  height: 480px;   /* Adjust to your desired height */
+  width: 400px;    /* Adjust to your desired width */
+  height: 450px;   /* Adjust to your desired height */
   margin-top: 100px;  /* Center the container if needed */
   overflow: hidden;
 }
