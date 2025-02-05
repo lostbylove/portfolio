@@ -313,7 +313,7 @@ footer {
 .animated-image:nth-child(2) { animation-delay: 0.8s; }
 .animated-image:nth-child(3) { animation-delay: 1.2s; }
 .animated-image:nth-child(4) { animation-delay: 1.6s; }
-.animated-image:nth-child(5) { animation-delay: 2; }
+.animated-image:nth-child(5) { animation-delay: 2s; }
 
 /* Keyframe Animation: Adjust percentages for timing as needed */
 @keyframes fadeAnimation {
