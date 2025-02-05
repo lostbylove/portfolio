@@ -292,9 +292,9 @@ footer {
 
 .image-container {
   position: relative;
-  width: 700px;    /* Adjust to your desired width */
-  height: 530px;   /* Adjust to your desired height */
-  margin: 0 auto;  /* Center the container if needed */
+  width: 500px;    /* Adjust to your desired width */
+  height: 480px;   /* Adjust to your desired height */
+  margin-top: 100px;  /* Center the container if needed */
   overflow: hidden;
 }
 
@@ -310,10 +310,10 @@ footer {
 
 /* Stagger animation delays for each image */
 .animated-image:nth-child(1) { animation-delay: 0s; }
-.animated-image:nth-child(2) { animation-delay: 0.8s; }
-.animated-image:nth-child(3) { animation-delay: 1.2s; }
-.animated-image:nth-child(4) { animation-delay: 1.6s; }
-.animated-image:nth-child(5) { animation-delay: 2s; }
+.animated-image:nth-child(2) { animation-delay: 2s; }
+.animated-image:nth-child(3) { animation-delay: 4s; }
+.animated-image:nth-child(4) { animation-delay: 6s; }
+.animated-image:nth-child(5) { animation-delay: 8s; }
 
 /* Keyframe Animation: Adjust percentages for timing as needed */
 @keyframes fadeAnimation {
