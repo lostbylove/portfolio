@@ -11,10 +11,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root 'pages#welcome'
-  get 'portfolio' => 'pages#portfolio'
-  get 'about' => 'pages#about'
-  get 'welcome' => 'pages#welcome'
-  get 'contact' => 'pages#contact'  # Point 'contact' to ContactFormsController
+  root "pages#welcome"
+  get "portfolio" => "pages#portfolio"
+  get "about" => "pages#about"
+  get "welcome" => "pages#welcome"
+  get "contact" => "pages#contact"  # Point 'contact' to ContactFormsController
   resources :contact_forms, only: [:index, :show, :new, :create, :edit, :update, :destroy] # All 7 standard actions
 end
