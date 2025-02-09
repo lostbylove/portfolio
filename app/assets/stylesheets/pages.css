@@ -196,7 +196,7 @@ footer {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 1500%;
+  width: 800%;
 }
 
 /* Each slide */
@@ -210,6 +210,7 @@ footer {
   width: 75%;
   height: auto;
   border-radius: 10px;
+
 
 }
 
