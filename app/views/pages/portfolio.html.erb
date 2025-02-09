@@ -115,4 +115,12 @@
     lightbox.option({
         'positionFromTop': 125
     })
+
+
+document.addEventListener("DOMContentLoaded", function () {
+const slider = document.querySelector("#slider1 .slider");
+const slides = slider.querySelectorAll(".slide");
+// Set the width to (# of slides * 100)%
+slider.style.width = `${slides.length * 100}%`;
+});
 </script>

@@ -336,4 +336,13 @@ footer {
     max-width: 100%;
   }
 
+  .slider-container, .slide {
+    text-align: center;
+  }
+
+  .slide img {
+    width: 80%;          /* You can adjust this percentage for mobile if needed */
+    margin: 0 auto;
+  }
+
 }
