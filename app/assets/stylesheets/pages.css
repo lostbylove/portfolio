@@ -103,7 +103,7 @@ footer {
     height: auto;
 }
 
-.container, .slider-container {
+.container, .slider-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -189,7 +189,6 @@ footer {
   border-radius: 10px;
   margin-top: 15px;
 
-
 }
 
 /* Slider wrapper */
@@ -207,7 +206,7 @@ footer {
 }
 
 .slide img {
-  width: 75%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
 
@@ -231,6 +230,7 @@ footer {
   justify-content: center; /* Center buttons horizontally */
   gap: 10px;
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .slider-btn {
@@ -341,7 +341,7 @@ footer {
   }
 
   .slide img {
-    width: 80%;          /* You can adjust this percentage for mobile if needed */
+    width: 70%;
     margin: 0 auto;
   }
 

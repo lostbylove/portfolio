@@ -13,14 +13,7 @@
         </a>
         <p style="font-style: italic; font-size: 4mm;">Click to image enlarge</p>
         <p>Rails router, contact form does all the CRUD </p>
-
-      </div>
-      <div class="slide">
-        <a href="<%= image_path 'pages_controller.png' %>" data-lightbox="gallery" data-title="Pages Controller">
-          <%= image_tag "pages_controller.png", alt: "page controller" %>
-        </a>
-        <p style="font-style: italic; font-size: 4mm;">Click to image enlarge</p>
-        <p>Description </p>
+        <p>Router sends user to appropriate pages by routing them to the page controller</p>
       </div>
       <div class="slide">
         <a href="<%= image_path 'contact_form_controller.png' %>" data-lightbox="gallery" data-title="Contact Form Controller">
@@ -32,20 +25,6 @@
       <div class="slide">
         <a href="<%= image_path 'application_html_view.png' %>" data-lightbox="gallery" data-title="Application View ">
           <%= image_tag "application_html_view.png", alt: "application view page" %>
-        </a>
-        <p style="font-style: italic; font-size: 4mm;">Click image to enlarge</p>
-        <p>Description </p>
-      </div>
-      <div class="slide">
-        <a href="<%= image_path 'contact_html_view.png' %>" data-lightbox="gallery" data-title="Contact Me Page">
-          <%= image_tag "contact_html_view.png", alt: "contact html page" %>
-        </a>
-        <p style="font-style: italic; font-size: 4mm;">Click image to enlarge</p>
-        <p>Description </p>
-      </div>
-      <div class="slide">
-        <a href="<%= image_path 'form_html_view.png' %>" data-lightbox="gallery" data-title="Form Partial View">
-          <%= image_tag "form_html_view.png", alt: "form html view" %>
         </a>
         <p style="font-style: italic; font-size: 4mm;">Click image to enlarge</p>
         <p>Description </p>
@@ -115,12 +94,4 @@
     lightbox.option({
         'positionFromTop': 125
     })
-
-
-document.addEventListener("DOMContentLoaded", function () {
-const slider = document.querySelector("#slider1 .slider");
-const slides = slider.querySelectorAll(".slide");
-// Set the width to (# of slides * 100)%
-slider.style.width = `${slides.length * 100}%`;
-});
 </script>
