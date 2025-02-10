@@ -195,14 +195,14 @@ footer {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 800%;
+  width: 500%;
 }
 
 /* Each slide */
 .slide {
   min-width: 100%;
   text-align: center;
-  position: relative;
+  position: static;
 }
 
 .slide img {
