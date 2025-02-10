@@ -202,7 +202,7 @@ footer {
 .slide {
   min-width: 100%;
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .slide img {
