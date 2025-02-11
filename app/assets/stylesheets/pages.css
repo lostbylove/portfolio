@@ -334,6 +334,9 @@ footer {
 
   .image, .text {
     max-width: 100%;
+    padding:  20px;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .slider-container, .slide {
@@ -341,8 +344,8 @@ footer {
   }
 
   .slide img {
-    width: 50%;
-
+    width: 70%;
+    margin: 50px;
   }
 
 }
