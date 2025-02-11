@@ -334,18 +334,18 @@ footer {
 
   .image, .text {
     max-width: 100%;
-    padding:  20px;
+    padding:  10px;
     word-break: break-word;
     overflow-wrap: break-word;
   }
 
   .slider-container, .slide {
-    text-align: center;
+    text-align: left;
   }
 
   .slide img {
     width: 70%;
-    margin: 50px;
+
   }
 
 }
