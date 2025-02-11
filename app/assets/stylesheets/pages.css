@@ -347,6 +347,9 @@ footer {
 
   .slide p {
     text-align: left;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 20px;
   }
 
 }
