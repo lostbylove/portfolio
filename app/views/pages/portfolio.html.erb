@@ -48,6 +48,17 @@
   </div>
 
   <div class="text-projects">
+    <h2 style="text-decoration: underline">Vue3 Injection</h2>
+    <p>I made this to learn about vue.js hands on and how to put it into my Rails project.</p>
+    <p> Press the play button and click on the block as it appears, try to get under 250ms for the best rank.</p>
+    <div class="vue-container">
+      <%= vite_client_tag %>
+      <%= vite_javascript_tag "application" %>
+      <div id="vue-app"></div>
+    </div>
+  </div>
+
+  <div class="text-projects">
     <h2 style="text-decoration: underline"> ArborPro LLC Tree Service Website</h2>
     <p >A friend of mine had issues with his free business website on Google being basic. So, I volunteered to help him create his own website by using WordPress and Siteground to host it. I looked at his competitor's websites and pulled inspiration from their designs.</p>
     <a href="https://www.arborprocda.com/services/" class="button">View Website</a>
@@ -86,6 +97,7 @@
     <button class="slider-btn" onclick="prevSlide(1)">❮ Prev</button>
     <button class="slider-btn" onclick="nextSlide(1)">Next ❯</button>
   </div>
+
 </main>
 
 <%= javascript_include_tag "slider", "data-turbo-track": "reload" %>

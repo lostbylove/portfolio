@@ -145,7 +145,7 @@ footer {
 .text-projects{
   background-color: black;
   color: #FFFFFF;
-  margin-bottom: -18px;
+  margin-bottom: 1px;
 
 }
 
@@ -188,6 +188,17 @@ footer {
   border: 2px solid #ddd;
   border-radius: 10px;
   margin-top: 15px;
+
+}
+
+.vue-container {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;     /* Center vertically */
+  justify-content: center; /* Center horizontally (optional) */
+  height: 50vh;
 
 }
 
